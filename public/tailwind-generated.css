@@ -554,12 +554,24 @@ video {
   display: none;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
 
 .m-auto {
   margin: auto;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .mx-3 {
@@ -670,6 +682,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -684,6 +700,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-4 {
