@@ -1,6 +1,7 @@
 ---
 import { CwHeader } from "../components/header.js";
 import { CwHeaderLink } from "../components/header-link.js";
+import { CwWell } from "../components/well.js";
 const { origin } = Astro.url;
 ---
 
@@ -13,7 +14,7 @@ const { origin } = Astro.url;
     <link href="./tailwind-generated.css" rel="stylesheet" />
     <title>Astro</title>
   </head>
-  <body>
+  <body class="bg-slate-200">
     <CwHeader>
       <div slot="siteTitle">
         <a class="text-xl text-gray-800 lg:text-2xl hover:text-gray-700 h-card u-url u-uid" rel="me" href={origin}>Debugging Your Brain</a>
@@ -29,5 +30,11 @@ const { origin } = Astro.url;
         <CwHeaderLink href="#buy">Where To Buy</CwHeaderLink>
       </div>
     </CwHeader>
+    <div class="m-auto max-w-3xl">
+      <CwWell>
+        <div slot="heading">Heading</div>
+        <div>Content content content</div>
+      </CwWell>
+    </div>
   </body>
 </html>
