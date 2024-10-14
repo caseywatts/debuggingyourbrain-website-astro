@@ -1,16 +1,39 @@
 ---
-
+import { CwHeader } from "../components/header.js";
+const { origin } = Astro.url;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link href="./tailwind-generated.css" rel="stylesheet" />
+    <title>Astro</title>
+  </head>
+  <body>
+    <CwHeader>
+      <div slot="siteTitle">
+        <a class="text-xl text-gray-800 lg:text-2xl hover:text-gray-700 h-card u-url u-uid" rel="me" href={origin}> Hi, I'm Casey!</a>
+      </div>
+      <div slot="links">
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="/blog">Blog</a>
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="/events">Events</a>
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="/projects">Projects & Tools</a>
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="/newsletter">Newsletter</a>
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="/contact">Contact</a>
+      </div>
+      <div slot="links-right">
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="https://www.debuggingyourbrain.com">Book</a>
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="https://www.youtube.com/watch?v=nj3IoW_rboE&list=PLsGBNq2i4TkLJUc2p5-p1T2LATcuP-Kx1">Conference Talks</a>
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="https://www.listennotes.com/playlists/featuring-casey-watts-CDTgofP45ih/episodes/">Podcasts</a>
+        <a class="text-gray-700 hover:text-indigo-500 text-center" href="https://www.happyandeffective.com">Work with Casey</a>
+      </div>
+      <div slot="social-media">
+        SOCIAL
+        <!-- <SocialMedia SVGSize="24" /> -->
+      </div>
+    </CwHeader>
+  </body>
 </html>

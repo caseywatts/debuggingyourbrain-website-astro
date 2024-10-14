@@ -26,6 +26,9 @@ importers:
       lit:
         specifier: ^3.2.1
         version: 3.2.1
+      tailwindcss:
+        specifier: ^3.4.13
+        version: 3.4.13
 
 packages:
 
