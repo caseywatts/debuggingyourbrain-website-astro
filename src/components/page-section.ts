@@ -4,7 +4,7 @@ import { customElement, property } from "lit/decorators.js";
 @customElement("cw-page-section")
 export class CwPageSection extends LitElement {
   @property({ type: String })
-  href = "";
+  href: string = "";
 
   render() {
     return html`<link href="/tailwind-generated.css" rel="stylesheet" />
