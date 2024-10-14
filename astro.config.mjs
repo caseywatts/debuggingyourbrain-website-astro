@@ -4,7 +4,9 @@ import tailwind from '@astrojs/tailwind';
 
 import mdx from '@astrojs/mdx';
 
+import lit from '@astrojs/lit';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), mdx()]
+  integrations: [tailwind(), mdx(), lit()]
 });
