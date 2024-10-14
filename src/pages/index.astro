@@ -3,6 +3,7 @@ import { CwHeader } from "../components/header.js";
 import { CwHeaderLink } from "../components/header-link.js";
 import { CwWell } from "../components/well.js";
 import { CwPageSection } from "../components/page-section.js";
+import { CwHero } from "../components/hero.js";
 const { origin } = Astro.url;
 ---
 
@@ -31,6 +32,7 @@ const { origin } = Astro.url;
         <CwHeaderLink href="#buy">Where To Buy</CwHeaderLink>
       </div>
     </CwHeader>
+    <CwHero />
     <div class="m-auto max-w-3xl">
       <CwPageSection>
         <div slot="section-heading">Section Heading</div>
