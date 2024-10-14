@@ -2,6 +2,7 @@
 import { CwHeader } from "../components/header.js";
 import { CwHeaderLink } from "../components/header-link.js";
 import { CwWell } from "../components/well.js";
+import { CwPageSection } from "../components/page-section.js";
 const { origin } = Astro.url;
 ---
 
@@ -31,10 +32,35 @@ const { origin } = Astro.url;
       </div>
     </CwHeader>
     <div class="m-auto max-w-3xl">
-      <CwWell>
-        <div slot="heading">Heading</div>
-        <div>Content content content</div>
-      </CwWell>
+      <CwPageSection>
+        <div slot="section-heading">Section Heading</div>
+        <div class="grid grid-cols-3 gap-4">
+          <CwWell>
+            <div slot="heading">Modeling The Brain</div>
+            <div>A discrete mental model of how your mind works, especially around thoughts and emotions.</div>
+          </CwWell>
+          <CwWell>
+            <div slot="heading">Cognitive Behavioral Therapy</div>
+            <div>An overview of the most commonly used talk therapy, and how it relates to other concepts.</div>
+          </CwWell>
+          <CwWell>
+            <div slot="heading">Managing The Backlog</div>
+            <div>People process challenging experiences through four stages: Aware, Articulated, Validated, and Resolved.</div>
+          </CwWell>
+          <CwWell>
+            <div slot="heading">Introspection & Identifying Inputs</div>
+            <div>How to get into a mental state to effectively work with your thoughts and feelings. Identify several specific types of inputs to your brain.</div>
+          </CwWell>
+          <CwWell>
+            <div slot="heading">Experience Processing & Validation</div>
+            <div>Principles and techniques you can use to more deeply understand your experiences, and validate them with others.</div>
+          </CwWell>
+          <CwWell>
+            <div slot="heading">Cognitive Restructuring / Refactoring</div>
+            <div>The most common unhelpful thought patterns, and how to counter them.</div>
+          </CwWell>
+        </div>
+      </CwPageSection>
     </div>
   </body>
 </html>
