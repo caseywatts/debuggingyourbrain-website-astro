@@ -8,7 +8,7 @@ export class CwHero extends LitElement {
 
   render() {
     return html`<link href="/tailwind-generated.css" rel="stylesheet" />
-      <div class="h-80" style="background-image:url('${this.backgroundImageSrc}'); background-size: cover; background-position: 0 50%">
+      <div class="h-80" style="background-image:url('${this.backgroundImageSrc}'); background-size: cover; background-position: 50% 50%">
         <slot></slot>
       </div>`;
   }
