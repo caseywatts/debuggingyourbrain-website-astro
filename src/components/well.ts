@@ -9,8 +9,8 @@ export class CwWell extends LitElement {
   render() {
     return html`<link href="/tailwind-generated.css" rel="stylesheet" />
       <div class="p-3 bg-white shadow-lg border-slate-300 border-2 mx-auto h-full">
-        <div class="mb-4">
-          <slot name="heading" class="text-2xl"></slot>
+        <div class="mb-3">
+          <slot name="heading" class="text-2xl mb-4"></slot>
         </div>
         <slot></slot>
       </div>`;

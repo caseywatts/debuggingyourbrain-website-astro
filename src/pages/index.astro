@@ -14,6 +14,8 @@ const { origin } = Astro.url;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link href="./tailwind-generated.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" /></noscript>
     <title>Astro</title>
   </head>
   <body class="bg-slate-200">
@@ -36,7 +38,7 @@ const { origin } = Astro.url;
     <div class="m-auto max-w-3xl p-2">
       <CwPageSection>
         <div class="m-auto p-4 text-center">
-          <div class="text-7xl pb-4">Debugging Your Brain</div>
+          <h1 class="text-6xl pb-4">Debugging Your Brain</h1>
           <div class="text-3xl">
             <div>psychology techniques to rewire your brain</div>
             <div>using software development metaphors</div>
@@ -57,18 +59,18 @@ const { origin } = Astro.url;
         </CwWell>
       </CwPageSection>
       <CwPageSection id="topics">
-        <div slot="section-heading">What does the book cover?</div>
+        <h2 slot="section-heading">What does the book cover?</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <CwWell>
-            <div slot="heading">Stop The Cycle</div>
+            <div slot="heading"><h3>Stop The Cycle</h3></div>
             <div>How can I stop thinking about the same thing over and over?</div>
           </CwWell>
           <CwWell>
-            <div slot="heading">Clear Your Brain</div>
+            <div slot="heading"><h3>Clear Your Brain</h3></div>
             <div>How can I get through the "backlog" of unprocessed experiences?</div>
           </CwWell>
           <CwWell>
-            <div slot="heading">Prevention</div>
+            <div slot="heading"><h3>Prevention</h3></div>
             <div>How can I prevent myself from getting stuck in the future?</div>
           </CwWell>
         </div>
